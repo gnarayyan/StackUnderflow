@@ -14,7 +14,7 @@ class LanguageModel(models.Model):
 class PostModel(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
     slug = models.CharField(max_length=150, blank=True, null=False)
-    poster = models.ImageField(upload_to='static/images/post')
+    poster = models.ImageField(upload_to='media/images/post')
     content = models.TextField(blank=False, null=False)
 
     modified_on = models.DateTimeField(auto_now=True)
