@@ -1,7 +1,8 @@
 from rest_framework import permissions, views, status, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from django.contrib.auth import login, authenticate
+from rest_framework.permissions import IsAuthenticated
+from django.contrib.auth import login, logout
 from . import serializers
 
 # Create your views here.
@@ -67,3 +68,13 @@ class LoginView(views.APIView):
         user = serializer.validated_data['user']
         login(request, user)
         return Response(None, status=status.HTTP_202_ACCEPTED)
+
+
+class LogoutView(views.APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        print(request)
+        print(dir(request))
+        logout(request)
+        return Response({'detail': 'Successfully Logout'}, status=status.HTTP_200_OK)
