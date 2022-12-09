@@ -18,8 +18,11 @@ from django.urls import path, include
 
 from django.conf import settings
 from django.conf.urls.static import static
+from home.views import RootHomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', RootHomeView.as_view()),
+    path('api/', include('home.urls')),
     path('api/', include('users.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
