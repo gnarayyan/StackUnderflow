@@ -10,6 +10,8 @@ from . import serializers
 
 
 class Signup(APIView):
+    permission_classes = (permissions.AllowAny,)
+
     def get(self, request):
         return Response({'username': '', 'first_name': '', 'last_name': '', 'password': '', 'email': '', 'avatar': 'This is an image Field'})
 
