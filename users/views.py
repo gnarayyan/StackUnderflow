@@ -1,6 +1,7 @@
 from rest_framework import permissions, views, status, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.parsers import JSONParser, FormParser, MultiPartParser, FileUploadParser
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth import login, logout
 from . import serializers
@@ -47,6 +48,7 @@ class DataView(views.APIView):
 
 
 class ProfileView(generics.RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = serializers.UserProfileSerializer
 
     def get_object(self):
@@ -55,6 +57,8 @@ class ProfileView(generics.RetrieveAPIView):
 
 
 class LoginView(views.APIView):
+    # parser_classes = [JSONParser]  # , JSONParser,
+    # FormParser, MultiPartParser, FileUploadParser]
     # This view should be accessible also for unauthenticated users.
     permission_classes = (permissions.AllowAny,)
 
@@ -62,12 +66,14 @@ class LoginView(views.APIView):
         return Response({'username': '', 'password': ''})
 
     def post(self, request):
+        print('Header: ', request.headers)
         serializer = serializers.LoginSerializer(
             data=self.request.data, context={'request': self.request})
         serializer.is_valid(raise_exception=True)
+
         user = serializer.validated_data['user']
         login(request, user)
-        return Response(None, status=status.HTTP_202_ACCEPTED)
+        return Response({'Succesfully Login'}, status=status.HTTP_202_ACCEPTED)
 
 
 class LogoutView(views.APIView):
