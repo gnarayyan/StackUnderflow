@@ -6,28 +6,32 @@ from slugify import slugify
 
 class SectionModel(models.Model):
     #Breaking, Headline
-    section = models.CharField(max_length=30, blank=False, null=False)
+    section = models.CharField(
+        max_length=30, blank=False, null=False, unique=True)
 
     def __str__(self):
         return self.section
 
 
 class CategoryModel(models.Model):
-    category = models.CharField(max_length=30, blank=False, null=False)
+    category = models.CharField(
+        max_length=30, blank=False, null=False, unique=True)
 
     def __str__(self):
         return self.category
 
 
 class RegionModel(models.Model):
-    region = models.CharField(max_length=30, blank=False, null=False)
+    region = models.CharField(
+        max_length=30, blank=False, null=False, unique=True)
 
     def __str__(self):
         return self.region
 
 
 class LanguageModel(models.Model):
-    language = models.CharField(max_length=30, blank=False, null=False)
+    language = models.CharField(
+        max_length=30, blank=False, null=False, unique=True)
 
     def __str__(self):
         return self.language
