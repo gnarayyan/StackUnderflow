@@ -49,19 +49,11 @@ class PostNewsView(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def post(self, request):
-        serializer = serializers.NewsSerializer(data=request.data)
+        serializer = serializers.PostNewsSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-# class NewsView(APIView):
-#     permission_classes = (permissions.AllowAny,)
-
-#     def get(self, request):
-#         queryset = models.NewsModel.objects.all()
-
-#         serializer = serializers.NewsSerializer(
-#             queryset, many=True)
-#         return Response(serializer.data)
+        return Response('News Added', status=status.HTTP_201_CREATED)
+        # return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
 class NewsAllView(generics.ListAPIView):

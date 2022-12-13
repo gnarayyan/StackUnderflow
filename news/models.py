@@ -50,7 +50,7 @@ class NewsModel(models.Model):
     region = models.ForeignKey(RegionModel, on_delete=models.CASCADE)
     section = models.ForeignKey(SectionModel, on_delete=models.CASCADE)
     slug = models.CharField(max_length=150, blank=True, null=False)
-    thubmnail = models.ImageField(upload_to='images/news', blank=True)
+    thumbnail = models.ImageField(upload_to='images/news', blank=True)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
