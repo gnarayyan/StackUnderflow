@@ -3,35 +3,35 @@
     "model": "news.CategoryModel",
     "pk": 1,
     "fields": {
-      "category": "Politics"
+      "category": "Science and Medicine"
     }
   },
   {
     "model": "news.CategoryModel",
     "pk": 2,
     "fields": {
-      "category": "Economy"
+      "category": "World"
     }
   },
   {
     "model": "news.CategoryModel",
     "pk": 3,
     "fields": {
-      "category": "Business"
+      "category": "Business and Finance"
     }
   },
   {
     "model": "news.CategoryModel",
     "pk": 4,
     "fields": {
-      "category": "Finance"
+      "category": "Celebrity"
     }
   },
   {
     "model": "news.CategoryModel",
     "pk": 5,
     "fields": {
-      "category": "Health"
+      "category": "Health, Wellbeing, and Fitness"
     }
   },
   {
@@ -45,7 +45,7 @@
     "model": "news.CategoryModel",
     "pk": 7,
     "fields": {
-      "category": "Travel"
+      "category": "Culture"
     }
   },
   {
@@ -66,63 +66,36 @@
     "model": "news.CategoryModel",
     "pk": 10,
     "fields": {
-      "category": "Arts"
+      "category": "Art and Lifestyle"
     }
   },
-  {
-    "model": "news.CategoryModel",
-    "pk": 11,
-    "fields": {
-      "category": "Lifestyle"
-    }
-  },
-  {
-    "model": "news.CategoryModel",
-    "pk": 12,
-    "fields": {
-      "category": "Opinions"
-    }
-  },
+
   {
     "model": "news.CategoryModel",
     "pk": 13,
     "fields": {
-      "category": "Tech"
+      "category": "Politics"
     }
   },
   {
     "model": "news.CategoryModel",
     "pk": 14,
     "fields": {
-      "category": "Science"
-    }
-  },
-  {
-    "model": "news.CategoryModel",
-    "pk": 15,
-    "fields": {
-      "category": "Culture"
+      "category": "Science and Discovery"
     }
   },
   {
     "model": "news.CategoryModel",
     "pk": 16,
     "fields": {
-      "category": "Books"
-    }
-  },
-  {
-    "model": "news.CategoryModel",
-    "pk": 17,
-    "fields": {
-      "category": "Letter"
+      "category": "Books and Literature"
     }
   },
   {
     "model": "news.CategoryModel",
     "pk": 18,
     "fields": {
-      "category": "Education"
+      "category": "Entertainment"
     }
   }
 ]
