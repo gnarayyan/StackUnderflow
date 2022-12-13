@@ -1,0 +1,21 @@
+
+[
+    {
+      "model": "news.NewsModel",
+      "pk": 1,
+      "fields": {
+        "title": "",
+        "location": "brooklyn",
+        "principal":"emma"
+      }
+    },
+    {
+      "model": "app.School",
+      "pk": 2,
+      "fields": {
+        "name": "Paul",
+        "location": "new york",
+        "principal":"stone"
+      }
+    }
+  ]

@@ -38,11 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
     'corsheaders',
     'users',
     'post',
     'home',
-    'news'
+    'news',
+    'newauth',
+    'knox',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -133,22 +137,27 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-AUTH_USER_MODEL = 'users.User'
+# AUTH_USER_MODEL = 'users.User'
 
 # For Token Auth
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        # 'knox.auth.TokenAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
 CORS_ORIGIN_ALLOW_ALL = True
-
+REST_USE_JWT = True
 # CORS_URLS_REGEX = r"^/api/.*$"
+# APPEND_SLASH = Falses

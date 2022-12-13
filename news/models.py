@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import User
+from django.contrib.auth.models import User
 from slugify import slugify
 # Create your models here.
 
@@ -36,19 +36,21 @@ class LanguageModel(models.Model):
     def __str__(self):
         return self.language
 
+# populate: python manage.py loaddata news.json
+
 
 class NewsModel(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
-    slug = models.CharField(max_length=150, blank=True, null=False)
-    thubmnail = models.ImageField(upload_to='media/images/news', blank=True)
     content = models.TextField(blank=False, null=False)
-    published_on = models.DateTimeField(auto_now_add=True)
-    language = models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
-    region = models.ForeignKey(RegionModel, on_delete=models.CASCADE)
-    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE)
-    section = models.ForeignKey(SectionModel, on_delete=models.CASCADE)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE)
+    language = models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
+    published_on = models.DateTimeField(auto_now_add=True)
     reading_time = models.IntegerField(default=5)
+    region = models.ForeignKey(RegionModel, on_delete=models.CASCADE)
+    section = models.ForeignKey(SectionModel, on_delete=models.CASCADE)
+    slug = models.CharField(max_length=150, blank=True, null=False)
+    thubmnail = models.ImageField(upload_to='images/news', blank=True)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
@@ -56,9 +58,3 @@ class NewsModel(models.Model):
 
     def __str__(self):
         return self.title
-
-# class User:
-#     email = models.EmailField(unique=True)
-#     first_name = models.CharField(max_length=150, blank=False, null=False)
-#     last_name = models.CharField(max_length=150, blank=False, null=False)
-#     avatar = models.ImageField(upload_to='media/images/user-profile')

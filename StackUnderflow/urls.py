@@ -19,11 +19,15 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from home.views import RootHomeView
-
+from rest_framework.authtoken import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', RootHomeView.as_view()),
+    path('api/users/', include('users.urls')),
     path('api/', include('home.urls')),
-    path('api/', include('users.urls')),
-    path('api/news/', include('news.urls'))
+    path('api/post/', include('post.urls')),
+    path('api/news/', include('news.urls')),
+    path('api/newauth/', include('newauth.urls')),
+    path('api-token-auth/', views.obtain_auth_token)
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

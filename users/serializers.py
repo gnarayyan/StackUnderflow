@@ -1,58 +1,49 @@
+# imports
 from rest_framework import serializers
+from django.contrib.auth.models import User
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.validators import UniqueValidator
+from django.contrib.auth.password_validation import validate_password
+
+# Signup(post)
 
 
-from django.contrib.auth import authenticate
-
-from .models import User
-
-
-class SignupSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'username', 'password', 'email',
-                  'first_name', 'last_name', 'avatar')
+        fields = ["id", "first_name", "last_name", "username"]
+
+# Serializer to Register User
 
 
-class UserProfileSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = User
-        fields = [
-            'username',
-            'first_name',
-            'last_name',
-            'avatar'
-        ]
-
-
-class LoginSerializer(serializers.Serializer):
-    username = serializers.CharField(
-        label="Username",
-        write_only=True
-    )
+class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(
-        label="Password",
-        # This will be used when the DRF browsable API is enabled
-        style={'input_type': 'password'},
-        trim_whitespace=False,
-        write_only=True
-    )
+        write_only=True, required=True, validators=[validate_password])
+    password2 = serializers.CharField(write_only=True, required=True)
+    full_name = serializers.CharField(
+        max_length=256, write_only=True, required=True)
+
+    class Meta:
+        model = User
+        fields = ('username', 'password', 'password2', 'full_name')
 
     def validate(self, attrs):
-        # Take username and password from request
-        username = attrs.get('username')
-        password = attrs.get('password')
-
-        if username and password:
-            # Try to authenticate the user using Django auth framework.
-            user = authenticate(request=self.context.get('request'),
-                                username=username, password=password)
-            if not user:
-                # If we don't have a regular user, raise a ValidationError
-                msg = 'Access denied: wrong username or password.'
-                raise serializers.ValidationError(msg, code='authorization')
-        else:
-            msg = 'Both "username" and "password" are required.'
-            raise serializers.ValidationError(msg, code='authorization')
-        attrs['user'] = user
+        if attrs['password'] != attrs['password2']:
+            raise serializers.ValidationError(
+                {"password": "Password fields didn't match."})
         return attrs
+
+    def create(self, validated_data):
+        full_name = validated_data['full_name'].split(' ')
+        user = User.objects.create(
+            username=validated_data['username'],
+            first_name=full_name[0],
+            last_name=full_name[1]
+        )
+        user.set_password(validated_data['password'])
+        user.save()
+        return user
+
+
+# login(newauth)

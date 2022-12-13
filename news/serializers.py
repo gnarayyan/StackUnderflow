@@ -1,33 +1,51 @@
 from rest_framework import serializers
 from .models import SectionModel, CategoryModel, RegionModel, LanguageModel, NewsModel
 
+from django.contrib.auth.models import User
+from users.serializers import UserSerializer
+
 
 class SectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = SectionModel
-        fields = ('section',)
+        fields = ('id', 'section',)
 
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = CategoryModel
-        fields = ('category',)
+        fields = ('id', 'category',)
 
 
 class RegionSerializer(serializers.ModelSerializer):
     class Meta:
         model = RegionModel
-        fields = ('region',)
+        fields = ('id', 'region',)
 
 
 class LanguageSerializer(serializers.ModelSerializer):
     class Meta:
         model = LanguageModel
-        fields = ('language',)
+        fields = ('id', 'language',)
 
 
-class InfoSerializer(serializers.Serializer):
-    language = LanguageSerializer(read_only=True, many=True)
-    region = RegionSerializer(read_only=True, many=True)
-    category = CategorySerializer(read_only=True, many=True)
-    section = SectionSerializer(read_only=True, many=True)
+class NewsSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = ('author',
+                  'category',
+                  'content',
+                  'language',
+                  'published_on',
+                  'reading_time',
+                  'region',
+                  'section',
+                  'slug',
+                  'thubmnail',
+                  'title')
+        model = NewsModel
+
+    author = UserSerializer()
+    category = CategorySerializer()  # CategorySerializer()
+    language = LanguageSerializer()  # LanguageSerializer()
+    region = RegionSerializer()  # serializers.StringRelatedField()
+    section = SectionSerializer()

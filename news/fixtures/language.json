@@ -1,0 +1,23 @@
+[
+  {
+    "model": "news.LanguageModel",
+    "pk": 1,
+    "fields": {
+      "language": "English"
+    }
+  },
+  {
+    "model": "news.LanguageModel",
+    "pk": 2,
+    "fields": {
+      "language": "नेपाली"
+    }
+  },
+  {
+    "model": "news.LanguageModel",
+    "pk": 3,
+    "fields": {
+      "language": "मैथिली"
+    }
+  }
+]

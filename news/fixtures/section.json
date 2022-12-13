@@ -1,0 +1,23 @@
+[
+  {
+    "model": "news.SectionModel",
+    "pk": 1,
+    "fields": {
+      "section": "headline"
+    }
+  },
+  {
+    "model": "news.SectionModel",
+    "pk": 2,
+    "fields": {
+      "section": "detail"
+    }
+  },
+  {
+    "model": "news.SectionModel",
+    "pk": 3,
+    "fields": {
+      "section": "breaking"
+    }
+  }
+]

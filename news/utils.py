@@ -9,6 +9,7 @@ MODEL = {'language': models.LanguageModel,
          'region': models.RegionModel,
          'category': models.CategoryModel,
          'section': models.SectionModel}
+
 SERIALIZER = {'language': serializers.LanguageSerializer,
               'region': serializers.RegionSerializer,
               'category': serializers.CategorySerializer,

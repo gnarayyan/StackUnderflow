@@ -1,0 +1,65 @@
+[
+  {
+    "model": "news.RegionModel",
+    "pk": 1,
+    "fields": {
+      "region": "General"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 2,
+    "fields": {
+      "region": "Province No. 1"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 3,
+    "fields": {
+      "region": "Madhesh Province"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 4,
+    "fields": {
+      "region": "Bagmati Province"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 5,
+    "fields": {
+      "region": "Gandaki Province"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 6,
+    "fields": {
+      "region": "Lumbini Province"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 7,
+    "fields": {
+      "region": "Karnali Province"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 8,
+    "fields": {
+      "region": "Sudurpashchim Province"
+    }
+  },
+  {
+    "model": "news.RegionModel",
+    "pk": 9,
+    "fields": {
+      "region": "International"
+    }
+  }
+]
