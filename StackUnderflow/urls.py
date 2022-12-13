@@ -28,6 +28,7 @@ urlpatterns = [
     path('api/post/', include('post.urls')),
     path('api/news/', include('news.urls')),
     path('api/newauth/', include('newauth.urls')),
-    path('api-token-auth/', views.obtain_auth_token)
+    path('api-token-auth/', views.obtain_auth_token),
+    path('api/auth/', include('knox.urls'))
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

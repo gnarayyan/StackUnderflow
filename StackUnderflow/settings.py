@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     'home',
     'news',
     'newauth',
-    'knox',
     'rest_framework.authtoken',
+    'knox',
 ]
 
 MIDDLEWARE = [
@@ -116,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kathmandu'
 
 USE_I18N = True
 
@@ -143,8 +143,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
-        # 'knox.auth.TokenAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication',
+        'knox.auth.TokenAuthentication',
         # 'rest_framework.authentication.BasicAuthentication',
         # 'rest_framework.authentication.SessionAuthentication',
     ],
