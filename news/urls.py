@@ -6,6 +6,7 @@ urlpatterns = [
     path('info/<str:model>', views.CategoryView.as_view()),
     path('all/', views.NewsAllView.as_view()),
     path('post/', views.PostNewsView.as_view()),
+    path('search/', views.NewsAllSearchView.as_view())
 
 
 ]

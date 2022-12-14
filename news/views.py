@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework import permissions, status
 from .utils import MODEL, SERIALIZER, NEWS_HELPER_MODELS
 from rest_framework import generics
+from rest_framework import filters
 # Create your views here.
 from rest_framework.filters import OrderingFilter, BaseFilterBackend
 from django_filters.rest_framework import DjangoFilterBackend
@@ -77,3 +78,11 @@ class NewsAllView(generics.ListAPIView):
                        'section',
                        'slug', 'title']
     ordering = ['published_on']
+
+
+class NewsAllSearchView(generics.ListAPIView):
+    permission_classes = (permissions.AllowAny,)
+    queryset = models.NewsModel.objects.all()
+    serializer_class = serializers.NewsSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['title', 'content']
