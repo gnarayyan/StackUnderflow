@@ -1,0 +1,155 @@
+[
+  {
+    "model": "news.CategoryModel",
+    "pk": 1,
+    "fields": {
+      "category": "Politics",
+      "ne": "राजनीति",
+      "href": "/section/politics"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 2,
+    "fields": {
+      "category": "Economy",
+      "ne": "अर्थव्यवस्था",
+      "href": "/section/economy"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 3,
+    "fields": {
+      "category": "Business",
+      "ne": "व्यवसाय",
+      "href": "/section/business"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 4,
+    "fields": {
+      "category": "Finance",
+      "ne": "वित्त",
+      "href": "/section/finance"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 5,
+    "fields": {
+      "category": "Health",
+      "ne": "स्वास्थ्य",
+      "href": "/section/health"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 6,
+    "fields": {
+      "category": "Sports",
+      "ne": "खेलकुद",
+      "href": "/section/sports"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 7,
+    "fields": {
+      "category": "Travel",
+      "ne": "यात्रा",
+      "href": "/section/travel"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 8,
+    "fields": {
+      "category": "Entertainment",
+      "ne": "मनोरञ्जन",
+      "href": "/section/entertainment"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 9,
+    "fields": {
+      "category": "Food",
+      "ne": "खाना",
+      "href": "/section/food"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 10,
+    "fields": {
+      "category": "Arts",
+      "ne": "कला",
+      "href": "/section/arts"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 11,
+    "fields": {
+      "category": "Lifestyle",
+      "ne": "जीवनशैली",
+      "href": "/section/lifestyle"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 12,
+    "fields": {
+      "category": "Opinions",
+      "ne": "विचार",
+      "href": "/section/opinions"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 13,
+    "fields": {
+      "category": "Tech",
+      "ne": "टेक",
+      "href": "/section/tech"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 14,
+    "fields": {
+      "category": "Science",
+      "ne": "विज्ञान",
+      "href": "/section/science"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 15,
+    "fields": {
+      "category": "Culture",
+      "ne": "संस्कृति",
+      "href": "/section/culture"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 16,
+    "fields": {
+      "category": "Books",
+      "ne": "पुस्तकहरू",
+      "href": "/section/books"
+    }
+  },
+  {
+    "model": "news.CategoryModel",
+    "pk": 17,
+    "fields": {
+      "category": "Education",
+      "ne": "शिक्षा",
+      "href": "/section/education"
+    }
+  }
+]

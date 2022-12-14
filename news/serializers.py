@@ -14,7 +14,7 @@ class SectionSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = CategoryModel
-        fields = ('id', 'category',)
+        fields = ('id', 'category', 'ne', 'href')
 
 
 class RegionSerializer(serializers.ModelSerializer):
