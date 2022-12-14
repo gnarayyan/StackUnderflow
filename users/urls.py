@@ -3,7 +3,6 @@ from .views import UserDetailAPI, RegisterUserAPIView, LoginAPI, UserProfile  # 
 from knox import views as knox_views
 
 urlpatterns = [
-    path("get-details/", UserDetailAPI.as_view()),
     path('register/', RegisterUserAPIView.as_view()),
     path('login/', LoginAPI.as_view()),
 
