@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'users',
     'home',
     'news',
-    'newauth',
     'rest_framework.authtoken',
     'knox',
 ]

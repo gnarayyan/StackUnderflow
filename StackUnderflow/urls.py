@@ -26,7 +26,6 @@ urlpatterns = [
     path('api/users/', include('users.urls')),
     path('api/', include('home.urls')),
     path('api/news/', include('news.urls')),
-    path('api/newauth/', include('newauth.urls')),
     path('api-token-auth/', views.obtain_auth_token),
     path('api/auth/', include('knox.urls'))
 
