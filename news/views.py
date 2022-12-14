@@ -9,6 +9,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from . import serializers
 from . import models
 ########
+from populate.populate import populate_user
 
 
 class NewsHomeView(APIView):
@@ -34,6 +35,7 @@ class CategoryView(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def get(self, request, model: str):
+        populate_user()
         if model not in NEWS_HELPER_MODELS:
             return Response({'Error ❌': f'api/news/info/{model} is not a valid endpoint'},
                             status=status.HTTP_404_NOT_FOUND)

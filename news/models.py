@@ -16,6 +16,10 @@ class SectionModel(models.Model):
 class CategoryModel(models.Model):
     category = models.CharField(
         max_length=30, blank=False, null=False, unique=True)
+    ne = models.CharField(
+        max_length=100, blank=True, null=True)
+    href = models.CharField(
+        max_length=100, blank=True, null=True)
 
     def __str__(self):
         return self.category

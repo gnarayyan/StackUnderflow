@@ -1,0 +1,502 @@
+[
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 51,
+    "fields": {
+      "username": "thume0@princeton.edu",
+      "first_name": "Taddeo",
+      "last_name": "Hume",
+      "password": "111iaK1S86mq"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 52,
+    "fields": {
+      "username": "kdelgaty1@mit.edu",
+      "first_name": "Kele",
+      "last_name": "Delgaty",
+      "password": "1112rj5o4ncR6"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 53,
+    "fields": {
+      "username": "slyal2@about.me",
+      "first_name": "Sanford",
+      "last_name": "Lyal",
+      "password": "111MwGszM5j6I"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 54,
+    "fields": {
+      "username": "bstagg3@printfriendly.com",
+      "first_name": "Bordy",
+      "last_name": "Stagg",
+      "password": "1116PWSCXBxJHi5"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 55,
+    "fields": {
+      "username": "nambrosoli4@meetup.com",
+      "first_name": "Nettle",
+      "last_name": "Ambrosoli",
+      "password": "111n7tQB6DGWTb"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 56,
+    "fields": {
+      "username": "kgrzeszczak5@unc.edu",
+      "first_name": "Kristyn",
+      "last_name": "Grzeszczak",
+      "password": "1119LSEmnJHc"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 57,
+    "fields": {
+      "username": "sroblin6@opensource.org",
+      "first_name": "Sapphire",
+      "last_name": "Roblin",
+      "password": "111evQzXsxqUc"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 58,
+    "fields": {
+      "username": "spessolt7@si.edu",
+      "first_name": "Sherry",
+      "last_name": "Pessolt",
+      "password": "1115Vhgy36NINJ"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 59,
+    "fields": {
+      "username": "ameasures8@i2i.jp",
+      "first_name": "Alessandra",
+      "last_name": "Measures",
+      "password": "111iUzZEJ"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 10,
+    "fields": {
+      "username": "hbohlmann9@mediafire.com",
+      "first_name": "Hodge",
+      "last_name": "Bohlmann",
+      "password": "111x1leXD0z4Tn"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 11,
+    "fields": {
+      "username": "kbarra@123-reg.co.uk",
+      "first_name": "Karole",
+      "last_name": "Barr",
+      "password": "111d4QxX7OKwYW"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 12,
+    "fields": {
+      "username": "eotteridgeb@webeden.co.uk",
+      "first_name": "Edeline",
+      "last_name": "Otteridge",
+      "password": "111AKUcWP"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 13,
+    "fields": {
+      "username": "mmarttc@abc.net.au",
+      "first_name": "Marcelline",
+      "last_name": "Martt",
+      "password": "111ngQAWqDpk"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 14,
+    "fields": {
+      "username": "mandreaccid@virginia.edu",
+      "first_name": "Malinde",
+      "last_name": "Andreacci",
+      "password": "111YSrviTkC1v2"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 15,
+    "fields": {
+      "username": "cgutridgee@acquirethisname.com",
+      "first_name": "Chloris",
+      "last_name": "Gutridge",
+      "password": "111TMaXatv60B9t"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 16,
+    "fields": {
+      "username": "olerwayf@vinaora.com",
+      "first_name": "Olia",
+      "last_name": "Lerway",
+      "password": "111lifO3bvS"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 17,
+    "fields": {
+      "username": "aolenaneg@answers.com",
+      "first_name": "Aurlie",
+      "last_name": "O'Lenane",
+      "password": "111zuKYlfaQ"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 18,
+    "fields": {
+      "username": "mpucknellh@about.me",
+      "first_name": "Misti",
+      "last_name": "Pucknell",
+      "password": "111ddkTbANQJL"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 19,
+    "fields": {
+      "username": "lcoddi@icq.com",
+      "first_name": "Lizabeth",
+      "last_name": "Codd",
+      "password": "111Ha49AkXfIdK"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 20,
+    "fields": {
+      "username": "espoursj@163.com",
+      "first_name": "Edythe",
+      "last_name": "Spours",
+      "password": "111NLvx55JCO4dG"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 21,
+    "fields": {
+      "username": "icappelk@alexa.com",
+      "first_name": "Indira",
+      "last_name": "Cappel",
+      "password": "111vgC0yR"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 22,
+    "fields": {
+      "username": "emurdyl@ucla.edu",
+      "first_name": "Eberto",
+      "last_name": "Murdy",
+      "password": "111SHc7Yjt9X3ca"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 23,
+    "fields": {
+      "username": "tinettm@un.org",
+      "first_name": "Theresa",
+      "last_name": "Inett",
+      "password": "111NmTv4WaCK"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 24,
+    "fields": {
+      "username": "cemptagen@eventbrite.com",
+      "first_name": "Chauncey",
+      "last_name": "Emptage",
+      "password": "111Ue2AxpRbGBC"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 25,
+    "fields": {
+      "username": "bmcnerno@csmonitor.com",
+      "first_name": "Bobbi",
+      "last_name": "McNern",
+      "password": "111paTZpZXW"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 26,
+    "fields": {
+      "username": "tdanneilp@unc.edu",
+      "first_name": "Tracie",
+      "last_name": "Danneil",
+      "password": "111WnxMh6c"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 27,
+    "fields": {
+      "username": "cfallisq@discuz.net",
+      "first_name": "Clair",
+      "last_name": "Fallis",
+      "password": "111P9AdyVG1Xps"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 28,
+    "fields": {
+      "username": "fdungater@blinklist.com",
+      "first_name": "Filberto",
+      "last_name": "Dungate",
+      "password": "1110hTPrPeoAH"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 29,
+    "fields": {
+      "username": "rsaers@joomla.org",
+      "first_name": "Ronnie",
+      "last_name": "Saer",
+      "password": "111QfXpi3"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 30,
+    "fields": {
+      "username": "bcasboltt@constantcontact.com",
+      "first_name": "Boycie",
+      "last_name": "Casbolt",
+      "password": "111huDes1Nv"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 31,
+    "fields": {
+      "username": "cplemingu@google.com.au",
+      "first_name": "Cynthy",
+      "last_name": "Pleming",
+      "password": "111t2keul6H"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 32,
+    "fields": {
+      "username": "dvigneronv@photobucket.com",
+      "first_name": "Dolly",
+      "last_name": "Vigneron",
+      "password": "111TgNYhKPv"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 33,
+    "fields": {
+      "username": "arixw@yahoo.com",
+      "first_name": "Alli",
+      "last_name": "Rix",
+      "password": "111B7Go0YQi"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 34,
+    "fields": {
+      "username": "bdesseinex@google.com",
+      "first_name": "Bendicty",
+      "last_name": "Desseine",
+      "password": "111oyDj8AoQ2"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 35,
+    "fields": {
+      "username": "mplunkety@home.pl",
+      "first_name": "Mannie",
+      "last_name": "Plunket",
+      "password": "111ExErenZ63O"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 36,
+    "fields": {
+      "username": "jdessonz@youtube.com",
+      "first_name": "Julie",
+      "last_name": "Desson",
+      "password": "111wLANinF6Z"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 37,
+    "fields": {
+      "username": "jbemand10@freewebs.com",
+      "first_name": "Joya",
+      "last_name": "Bemand",
+      "password": "111tTeANZi"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 38,
+    "fields": {
+      "username": "jduckhouse11@nifty.com",
+      "first_name": "Juanita",
+      "last_name": "Duckhouse",
+      "password": "111CsiAZSZt"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 39,
+    "fields": {
+      "username": "adeinert12@symantec.com",
+      "first_name": "Arnaldo",
+      "last_name": "Deinert",
+      "password": "111wrQtfV2"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 40,
+    "fields": {
+      "username": "aashbridge13@chronoengine.com",
+      "first_name": "Armando",
+      "last_name": "Ashbridge",
+      "password": "111EQGln83"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 41,
+    "fields": {
+      "username": "tfieldgate14@clickbank.net",
+      "first_name": "Thorvald",
+      "last_name": "Fieldgate",
+      "password": "111fT4xAbGUYq"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 42,
+    "fields": {
+      "username": "ckillick15@mapy.cz",
+      "first_name": "Constantine",
+      "last_name": "Killick",
+      "password": "111ftD1Vj"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 43,
+    "fields": {
+      "username": "jwhayman16@wikimedia.org",
+      "first_name": "Jenilee",
+      "last_name": "Whayman",
+      "password": "111UYx7ZOtz0RBk"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 44,
+    "fields": {
+      "username": "ilope17@umn.edu",
+      "first_name": "Ilka",
+      "last_name": "Lope",
+      "password": "111tDtbk5UwJC2"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 45,
+    "fields": {
+      "username": "breape18@ameblo.jp",
+      "first_name": "Briant",
+      "last_name": "Reape",
+      "password": "111FJ5Da9"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 46,
+    "fields": {
+      "username": "fjurgen19@marriott.com",
+      "first_name": "Florrie",
+      "last_name": "Jurgen",
+      "password": "1111fag21HNLFy"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 47,
+    "fields": {
+      "username": "arew1a@businessinsider.com",
+      "first_name": "Ardelle",
+      "last_name": "Rew",
+      "password": "111FRgFMZP7wNb"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 48,
+    "fields": {
+      "username": "lsleeford1b@livejournal.com",
+      "first_name": "Liza",
+      "last_name": "Sleeford",
+      "password": "111bnvBT8"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 49,
+    "fields": {
+      "username": "lgatsby1c@ucoz.com",
+      "first_name": "Lovell",
+      "last_name": "Gatsby",
+      "password": "111ZHFitZf4sUO"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 50,
+    "fields": {
+      "username": "dbaddam1d@diigo.com",
+      "first_name": "Dorian",
+      "last_name": "Baddam",
+      "password": "111Wvm75Y1"
+    }
+  }
+]
