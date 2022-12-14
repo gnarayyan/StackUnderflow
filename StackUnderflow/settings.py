@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django_filters',
     'corsheaders',
     'users',
-    'post',
     'home',
     'news',
     'newauth',

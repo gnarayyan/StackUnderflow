@@ -25,7 +25,6 @@ urlpatterns = [
     path('', RootHomeView.as_view()),
     path('api/users/', include('users.urls')),
     path('api/', include('home.urls')),
-    path('api/post/', include('post.urls')),
     path('api/news/', include('news.urls')),
     path('api/newauth/', include('newauth.urls')),
     path('api-token-auth/', views.obtain_auth_token),
